@@ -1,0 +1,59 @@
+name: "💡 Feature Request"
+description: Suggest an idea or enhancement for Rotate
+title: "[FEATURE] - "
+labels: ["feature request", "needs triage"]
+assignees: []
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: 💡 Describe the Feature
+      description: A clear and concise description of what you want to happen.
+      placeholder: Add a route import wizard with validation and preview.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🔍 Problem Statement
+      description: Is your feature request related to a problem? Please describe.
+      placeholder: Importing routes manually is error-prone and slow.
+    validations:
+      required: false
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 🛠 Proposed Solution
+      description: Describe the solution you'd like, including any UI/UX ideas.
+      placeholder: A step-by-step import tool that validates CSV columns and shows a diff before saving.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 📌 Alternatives Considered
+      description: Explain other approaches you’ve thought about.
+      placeholder: Manual CSV upload via admin panel; API-based ingestion.
+    validations:
+      required: false
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: 📷 Mockups / Examples
+      description: Paste screenshots, sketches, or links to examples.
+      placeholder: Drag & drop images or paste links here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 🎯 Additional Context
+      description: Any other information you think is relevant.
+      placeholder: Related features, constraints, expected impact, etc.
+    validations:
+      required: false

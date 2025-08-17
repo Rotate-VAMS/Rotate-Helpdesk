@@ -1,0 +1,92 @@
+name: "💳 Payment Query"
+description: Ask a question about payments, billing, or subscription in Rotate
+title: "[PAYMENT] - "
+labels: ["payment", "question", "needs triage"]
+assignees: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 💳 Payment Question
+      description: A clear and concise description of your payment-related question or concern.
+      placeholder: Ex. Need invoice for last month / card declined / refund status
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: looking_for
+    attributes:
+      label: 🔍 What You're Looking For
+      options:
+        - label: Billing question
+        - label: Subscription inquiry
+        - label: Payment method issue
+        - label: Invoice request
+        - label: Refund inquiry
+        - label: Pricing question
+        - label: Other (please specify below)
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 📋 Relevant Details
+      description: Provide details to help us investigate.
+      placeholder: |
+        Account Email:
+        Subscription Plan:
+        Payment Method: PayPal/Razorpay
+        Transaction Date:
+        Transaction ID:
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots / Attachments
+      description: Paste images or drag/drop files (receipts, errors, etc.).
+      placeholder: Drop images/logs here
+    validations:
+      required: false
+
+  - type: input
+    id: rotate_version
+    attributes:
+      label: 🖥 Environment - Rotate Version
+      placeholder: v1.3.0
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: 🖥 Environment - Browser
+      placeholder: Chrome 126, Firefox 128, Safari 17...
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: 🖥 Environment - Operating System
+      placeholder: Windows 11, macOS 14, Ubuntu 22.04...
+    validations:
+      required: false
+
+  - type: input
+    id: platform
+    attributes:
+      label: 🖥 Environment - Payment Platform (if applicable)
+      placeholder: PayPal, Razorpay
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 📌 Additional Context
+      placeholder: Anything else we should know?
+    validations:
+      required: false

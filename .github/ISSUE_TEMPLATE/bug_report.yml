@@ -1,0 +1,93 @@
+name: "� Bug Report"
+description: Report a bug in Rotate
+title: "[BUG] - "
+labels: ["bug", "needs triage"]
+assignees: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 💳 Payment Question
+      description: A clear and concise description of your payment-related question or concern.
+      placeholder: Ex. The route import wizard doesn't validate CSV columns...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: looking_for
+    attributes:
+      label: 🔍 What You're Looking For
+      description: Select all that apply.
+      options:
+        - label: Performance issue
+        - label: Feature regression
+        - label: UI/UX bug
+        - label: Data import issue
+        - label: Permissions issue
+        - label: Refund inquiry
+        - label: Other (please specify below)
+    validations:
+      required: false
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 📋 Relevant Details
+      description: Provide any useful information to help us assist you.
+      placeholder: |
+        Account Email: you@example.com
+        Page: Route settings
+        Action: Clicking the import button
+        Expected: Rows validate and the import runs
+        Observed: Rows fail validation and the import doesn't run
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📷 Screenshots / Attachments
+      description: Paste images or drag & drop files that show the issue (receipts, error messages, etc.).
+      placeholder: Drop images/logs here
+    validations:
+      required: false
+
+  - type: input
+    id: rotate_version
+    attributes:
+      label: 🖥 Environment - Rotate Version
+      placeholder: v1.2.0
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: 🖥 Environment - Browser
+      placeholder: Chrome 128, Firefox 129, Safari 17...
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: 🖥 Environment - Operating System
+      placeholder: Windows 12, macOS 15, Ubuntu 23.04...
+    validations:
+      required: false
+
+  - type: input
+    id: platform
+    attributes:
+      label: 🖥 Environment - Platform (if applicable)
+      placeholder: Personal account, Business account
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 📌 Additional Context
+      placeholder: Any extra information that helps us reproduce the bug.
+    validations:
+      required: false

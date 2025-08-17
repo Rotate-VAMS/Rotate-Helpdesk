@@ -1,0 +1,32 @@
+name: "❓ General Question"
+description: Ask a question about Rotate
+title: "[QUESTION] - "
+labels: ["question", "needs triage"]
+assignees: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: ❓ Your Question
+      description: Clearly state your question.
+      placeholder: How do I connect Rotate with the Discord bot?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 📚 What I've Tried
+      description: Tell us what you’ve already looked at or tested.
+      placeholder: Read the wiki section on Discord; tried the bot invite; checked permissions...
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 📌 Additional Context
+      description: Any other details or examples that might help answer your question.
+      placeholder: Links, screenshots, error messages, repo URL, etc.
+    validations:
+      required: false
